@@ -1,0 +1,36 @@
+description: Show where the site is hosted
+tags:
+  - all
+
+bucketBy:
+  - userId
+
+environments:
+
+  sbx:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 100
+
+  ci:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 100
+
+  stg:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for no-one 
+        percentage: 100
+
+  prd:
+    rules:
+      - key: "1"
+        segments: "deployedBlue"
+        percentage: 100
+
+      - key: "2"
+        segments: "*" # enabled for everyone
+        percentage: 0

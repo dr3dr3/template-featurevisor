@@ -1,0 +1,5 @@
+description: users accessing the Production (Blue) environment 
+conditions:
+  - attribute: blueGreen
+    operator: equals
+    value: blue

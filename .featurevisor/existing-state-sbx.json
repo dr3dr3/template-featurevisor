@@ -1,0 +1,22 @@
+{
+  "features": {
+    "showDeployHost": {
+      "traffic": [
+        {
+          "key": "1",
+          "percentage": 100000,
+          "allocation": []
+        }
+      ]
+    },
+    "showLatestChange": {
+      "traffic": [
+        {
+          "key": "1",
+          "percentage": 100000,
+          "allocation": []
+        }
+      ]
+    }
+  }
+}
