@@ -2,7 +2,7 @@
     "name": "devops-demo-ff",
     "version": "0.0.2",
     "description": "Feature Flags for DevOps Demo",
-    "homepage": "http://localhost:3000",
+    "homepage": "https://dr3dr3.github.io/template-featurevisor/",
     "license": "MIT",
     "author": {
         "name": "André Dreyer",
