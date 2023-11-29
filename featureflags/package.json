@@ -21,8 +21,8 @@
         "start": "npx featurevisor build && npx featurevisor site export && npx featurevisor site serve -p 3001",
         "lint": "npx featurevisor lint",
         "test": "npx featurevisor test",
-        "build-only": "npx featurevisor test",
-        "build": "npx featurevisor build && npx featurevisor site export && rsync -avh out/ dist && rsync favicon-128.png out/",
+        "build-only": "npx featurevisor build",
+        "build": "npx featurevisor build && npx featurevisor site export && rsync favicon-128.png out/",
         "export": "npx featurevisor site export",
         "generate-code": "npx featurevisor generate-code --language typescript --out-dir ./src",
         "find-duplicate-segments": "npx featurevisor find-duplicate-segments"
