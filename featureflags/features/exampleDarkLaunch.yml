@@ -16,8 +16,8 @@ environments:
   ci:
     rules:
       - key: "1"
-        segments: "*" # enabled for everyone 
-        percentage: 100
+        segments: "*" # enabled for no-one 
+        percentage: 0
 
   stg:
     rules:
