@@ -1,0 +1,45 @@
+description: Example feature flag for previewing features in Stage and Production
+tags:
+  - all
+
+bucketBy:
+  - userId
+
+environments:
+
+  sbx:
+    rules:
+      - key: "1"
+        segments: "modePreview" # enabled just for testing
+        percentage: 100
+      - key: "2"
+        segments: "*" # enabled for everyone
+        percentage: 0
+
+  ci:
+    rules:
+      - key: "1"
+        segments: "modePreview" # enabled just for testing
+        percentage: 100
+      - key: "2"
+        segments: "*" # enabled for everyone
+        percentage: 0
+
+  stg:
+    rules:
+      - key: "1"
+        segments: "modePreview" # enabled just for testing
+        percentage: 100
+      - key: "2"
+        segments: "*" # enabled for everyone
+        percentage: 0
+
+  prd:
+    rules:
+      - key: "1"
+        segments: "modePreview" # enabled just for testing
+        percentage: 100
+      - key: "2"
+        segments: "*" # enabled for everyone
+        percentage: 0
+
