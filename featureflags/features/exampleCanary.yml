@@ -1,0 +1,34 @@
+description: Example feature flag for canary releases in Production
+tags:
+  - all
+
+bucketBy:
+  - userId
+
+environments:
+
+  sbx:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 100
+
+  ci:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 100
+
+  stg:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for 10% 
+        percentage: 10
+
+  prd:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for 10%
+        percentage: 10
+
+
