@@ -1,4 +1,4 @@
-description: Example flag used in Next.JS SSG
+description: Show GitHub Profile
 tags:
   - all
 
@@ -29,5 +29,5 @@ environments:
     rules:
       - key: "1"
         segments: "*" # enabled for everyone
-        percentage: 0
+        percentage: 100
 

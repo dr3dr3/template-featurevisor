@@ -1,0 +1,5 @@
+description: Testing mode users by those testing new features in production
+conditions:
+  - attribute: mode
+    operator: equals
+    value: testing

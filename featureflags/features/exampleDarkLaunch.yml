@@ -1,4 +1,4 @@
-description: Example flag used in Next.JS SSG
+description: Example feature flag for dark launching incomplete ode
 tags:
   - all
 
@@ -23,7 +23,7 @@ environments:
     rules:
       - key: "1"
         segments: "*" # enabled for no-one 
-        percentage: 100
+        percentage: 0
 
   prd:
     rules:
