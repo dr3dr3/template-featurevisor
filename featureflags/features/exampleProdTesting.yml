@@ -23,7 +23,7 @@ environments:
         percentage: 100
       - key: "2"
         segments: "*" # enabled for everyone
-        percentage: 0
+        percentage: 100
 
   stg:
     rules:
